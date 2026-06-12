@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Wijaya | Model Event</title>
+    <script src="https://kit.fontawesome.com/6abbd5f8b6.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="picture/logo1.png" class="logo" alt="" width="125px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a class="active" href="event.html">Event</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping" style="color: #eeebdd;"></i>
+                        <span class="cart-counter" style="display: none;"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="event-hero" class="section-p1">
+        <h1>Become Our Ethereal Model</h1>
+        <p>Join Christian Wijaya's exclusive modeling program and showcase our latest collection</p>
+    </section>
+
+    <section id="ethereal-benefits" class="section-p1">
+        <h2 class="underline1">Ethereal Model Benefits</h2>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <i class="fas fa-star"></i>
+                <h4>Global Exposure</h4>
+                <p>Featured in our international campaigns and fashion shows</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-camera"></i>
+                <h4>Professional Portfolio</h4>
+                <p>High-quality photoshoots with our creative team</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-network-wired"></i>
+                <h4>Industry Connections</h4>
+                <p>Network with top fashion professionals</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-award"></i>
+                <h4>Exclusive Perks</h4>
+                <p>Special discounts and early access to collections</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="past-events" class="section-p1">
+        <h2 class="underline1">Our Successful Events</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <img src="picture/cw-show1.jpg" alt="Ethereal Vanguard">
+                <h4>Ethereal Vanguard</h4>
+            </div>
+            <div class="event-card">
+                <img src="picture/cw-show2.jpg" alt="Ethereal Celestial Runway">
+                <h4>Ethereal Celestial Runway</h4>
+            </div>
+            <div class="event-card">
+                <img src="picture/cw-show3.jpg" alt="The Wijaya Silhouette Project">
+                <h4>The Wijaya Silhouette Project</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="model-form" class="section-p1">
+        <h2 class="underline1">Model Application</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName"required>
+                <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Birth Date</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+                <div class="error-message" id="birthDateError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="error-message" id="genderError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="cv">Upload CV/Portfolio</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+                <div class="error-message" id="cvError"></div>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                <div class="error-message" id="termsError"></div>
+            </div>
+
+            <button type="submit" class="normal">Submit Application</button>
+        </form>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <a href=""><img class="logofo" src="picture/logo1.png" class="logo" alt="" width="150px"></a>
+            <h4 class="contact">Contact</h4>
+            <p><strong>Address:</strong> Kemang Raya No. 72, Jakarta Selatan 12730, Indonesia</p>
+            <p><strong>Phone:</strong> +62 812-3456-7890</p>
+            <p><strong>E-mail:</strong> client@christianwijaya.com</p>
+            <p><strong>Hours:</strong> Mon-Fri 10AM-6PM | Sat 11AM-3PM</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="picture/app.jpg" alt="" width="230px">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="row">
+                <img src="picture/pay.jpg" alt="" width="230px">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 CHRISTIAN WIJAYA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

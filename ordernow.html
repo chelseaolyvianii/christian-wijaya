@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Wijaya</title>
+    <script src="https://kit.fontawesome.com/6abbd5f8b6.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="picture/logo1.png" class="logo" alt="" width="125px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping" style="color: #eeebdd;"></i>
+                        <span class="cart-counter" style="display: none;"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="checkout" class="section-p1">
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <h2>Shipping Information</h2>
+                <form id="shippingForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Full Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="postalCode">Postal Code</label>
+                            <input type="text" id="postalCode" name="postalCode" required>
+                        </div>
+                    </div>
+                    
+                    <h3>Payment Method</h3>
+                    <div class="form-group">
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="bca">BCA Transfer</option>
+                            <option value="gopay">Gopay</option>
+                            <option value="ovo">OVO</option>
+                        </select>
+                    </div>
+                    
+                    <div class="payment-instructions" id="bcaInstructions" style="display: none;">
+                        <p>Please transfer to BCA Account:<br>
+                        <strong>123-456-7890</strong><br>
+                        Christian Wijaya Official Store</p>
+                    </div>
+                    
+                    <div class="payment-instructions" id="gopayInstructions" style="display: none;">
+                        <p>Please complete payment via Gopay to:<br>
+                        <strong>0812-3456-7890</strong><br>
+                        Christian Wijaya Official</p>
+                    </div>
+                    
+                    <div class="payment-instructions" id="ovoInstructions" style="display: none;">
+                        <p>Please complete payment via OVO to:<br>
+                        <strong>0812-3456-7890</strong><br>
+                        Christian Wijaya Official</p>
+                    </div>
+                    
+                    <div class="form-group terms">
+                        <input type="checkbox" id="acceptTerms" required>
+                        <label for="acceptTerms">I agree to the <a href="#">Terms and Conditions</a></label>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-items" id="checkoutItems">
+                    
+                </div>
+                
+                <div class="summary-totals">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="checkoutSubtotal">Rp 0</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="checkoutShipping">Rp 25,000</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span id="checkoutTax">Rp 0</span>
+                    </div>
+                    
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="checkoutTotal">Rp 0</span>
+                    </div>
+                </div>
+                
+                <button type="submit" form="shippingForm" class="checkout-btn">Complete Order</button>
+                <a href="cart.html" class="back-to-cart">Back to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <a href=""><img class="logofo" src="picture/logo1.png" class="logo" alt="" width="150px"></a>
+            <h4 class="contact">Contact</h4>
+            <p><strong>Address:</strong> Kemang Raya No. 72, Jakarta Selatan 12730, Indonesia</p>
+            <p><strong>Phone:</strong> +62 812-3456-7890</p>
+            <p><strong>E-mail:</strong> client@christianwijaya.com</p>
+            <p><strong>Hours:</strong> Mon-Fri 10AM-6PM | Sat 11AM-3PM</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="picture/app.jpg" alt="" width="230px">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="row">
+                <img src="picture/pay.jpg" alt="" width="230px">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 CHRISTIAN WIJAYA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
